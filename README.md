@@ -1,2 +1,4 @@
 # periodic-table
-this site was created by me at the request of my chemistry teacher from college.
+this site was created by me at the request of my chemistry teacher from college, it consists of 1 page as the main html document, which contains all the information about the site, the 2nd html document, which already contains the periodic table with pop-up windows of information when clicking on the elements of the table, and the 3rd html document, where the solubility table is presented and where , also, when clicking on the table element , you can see all the information about the element
+
+этот сайт был создан мной по запросу моего учителя химии из колледжа, он представляет собой 1 страницу как главный html-документ, где говорится вся информация о сайте, 2-ой документ html, где уже представлена самая периодическая таблица Менделеева со всплывающими окнами информации при нажатии на элементы таблицы, и 3-ий документ html, где представлена таблица растворимостей и где также при нажатии на элемент таблицы можно увидеть всю информацию об элементе
