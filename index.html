@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Базовые настройки -->
     <meta charset="UTF-8">
+    <!-- Адаптивный вьюпорт с запретом масштабирования -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Сайт по Химии колледжа RANEPA</title>
-    <!-- Базовый favicon -->
-<link rel="icon" type="RANEPA_logo.png" href="/RANEPA_logo.png">
+<!-- Favicon настройки -->
+    <!-- Основная иконка -->
+    <link rel="icon" type="RANEPA_logo.png" href="/RANEPA_logo.png">
+    <!-- Иконки для Apple-устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/RANEPA_logo.png">
+    <!-- Иконки разных размеров -->
+    <link rel="icon" type="RANEPA_logo.png" sizes="32x32" href="/RANEPA_logo.png">
+    <link rel="icon" type="RANEPA_logo.png" sizes="16x16" href="/RANEPA_logo.png">
 
-<!-- Для разных устройств -->
-<link rel="apple-touch-icon" sizes="180x180" href="/RANEPA_logo.png">
-<link rel="icon" type="RANEPA_logo.png" sizes="32x32" href="/RANEPA_logo.png">
-<link rel="icon" type="RANEPA_logo.png" sizes="16x16" href="/RANEPA_logo.png">
-
-<!-- Manifest для PWA -->
-<link rel="manifest" href="/site.webmanifest">
+<!-- стили CSS -->
+<link rel="manifest" >
     <style>
+        /* Глобальный сброс стилей */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
+        /* Основные стили тела документа */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
         }
-
+        /* Стили шапки сайта */
         header {
             background-color: #2c3e50;
             color: white;
@@ -36,8 +40,7 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease;
         }
-
-
+        /* Навигационное меню */
         nav {
             background-color: #444;
             padding: 1rem;
@@ -58,13 +61,13 @@
         nav a:hover {
             color: #ffd700;
         }
-
+        /* Основной контент */
         main {
             padding: 2rem;
             max-width: 1200px;
             margin: 0 auto;
         }
-
+        /* Секции контента */
         section {
             margin-bottom: 2rem;
             padding: 1.5rem;
@@ -79,7 +82,7 @@
             box-shadow: 0 8px 15px rgba(78, 205, 196, 0.2);
             cursor: pointer;
         }
-
+        /* Подвал сайта */
         footer {
             background-color: #333;
             color: white;
@@ -100,8 +103,9 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     border-radius: 15px; 
     margin: 10px 15px; 
-}
-footer {
+        }
+        /* Анимация логотипа */
+        footer {
     background: #2c3e50; /* Новый цвет фона */
     color: white;
     text-align: center;
@@ -111,7 +115,7 @@ footer {
     width: 100%;
     border-radius: 15px 15px 0 0; /* Закругление верхних углов */
     box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-}
+        }
 /* Для адаптивности на мобильных устройствах */
 @media (max-width: 768px) {
     nav {
@@ -156,7 +160,7 @@ nav a:hover {
     }
 }
 
-        /* Стили для логотипа */
+        /* Анимация логотипа */
         .main-header {
             position: fixed;
             top: 20px;
@@ -256,7 +260,7 @@ nav a:hover {
             }
         }
 
-        /* Стили для карточки */
+        /* Интерактивная карточка с социальными сетями */
         .card {
           position: relative;
           width: 200px;
@@ -397,7 +401,7 @@ nav a:hover {
           bottom: 40px;
           right: 40px;
         }
-        /* Добавлен лоадер */
+        /* Лоадер */
         .loader-container {
             position: fixed;
             top: 0;
@@ -442,16 +446,16 @@ nav a:hover {
                 margin: 0.5rem;
                 border-radius: 15px;
             }
-            
+            /* Адаптация меню */ 
             nav {
                 position: static;
                 margin: 0;
                 border-radius: 0;
             }
-            
+            /* Адаптация основного контента */
             main {
                 padding: 1rem;
-                margin-bottom: 60px; /* Для фиксированного футера */
+                margin-bottom: 60px; 
             }
             
             section {
@@ -494,10 +498,11 @@ nav a:hover {
     </style>
 </head>
 <body>
+    <!-- Основная структура страницы -->
     <header>
         <h1>Добро пожаловать на сайт<br> по химии коледжа РАНХиГС</h1>
     </header>
-<!-- Добавлен лоадер -->
+<!-- Лоадер  -->
 <div class="loader-container" id="loader">
     <div class="loader">
         <div></div>
@@ -514,7 +519,7 @@ nav a:hover {
     </a>
 </header>
 
-<!-- Для главной страницы (index.html) -->
+<!-- Навигационное меню -->
 <nav>
     <ul>
         <li><a href="index.html">Главная</a></li>
@@ -522,22 +527,24 @@ nav a:hover {
         <li><a href="solubility-table.html">Таблица растворимости</a></li>
     </ul>
 </nav>
-
+    <!-- Основной контент -->
     <main>
+        <!-- Секция "Главная" -->
         <section id="home">
             <h2>Главная</h2>
             <p>Это главная страница нашего сайта. Здесь вы можете найти основную информацию.</p>
         </section>
-
+        <!-- Секция "О нас" -->
         <section id="about">
             <h2>О нас</h2>
             <p>Этот сайт был создан энтузиастами, чтобы помочь в процессе обучения.</p>
         </section>
-
+        <!-- Секция с социальными сетями -->
         <section id="contact">
             <h2>Наши соц.сети</h2>
             <p><!-- Карточка с логотипом и анимацией -->
                 <div class="card">
+                    <!-- Элементы карточки с анимацией -->
                   <div class="background"></div>
                   <div class="logo">
                     <a href="https://www.ranepa.ru/?utm_source=yandex.ru&utm_medium=organic&utm_campaign=yandex.ru&utm_referrer=yandex.ru" target="_blank" class="icon">
@@ -567,14 +574,15 @@ nav a:hover {
             
         </section>
     </main>
-
+    <!-- Подвал сайта -->
     <footer>
-        
         <p>© сайт RANEPA. Все права защищены.</p>
     </footer>
+     <!-- Скрипты -->
     <script>
-        // Скрипт для скрытия лоадера
+        // Обработчик загрузки страницы
         window.addEventListener('load', () => {
+            // Скрытие лоадера с анимацией
             const loader = document.getElementById('loader');
             loader.style.opacity = '0';
             setTimeout(() => {
