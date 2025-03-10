@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <!-- Метаданные и стили -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Таблица растворимости</title>
-    <!-- Базовый favicon -->
-<link rel="icon" type="RANEPA_logo.png" href="/RANEPA_logo.png">
-
-<!-- Для разных устройств -->
-<link rel="apple-touch-icon" sizes="180x180" href="/RANEPA_logo.png">
-<link rel="icon" type="RANEPA_logo.png" sizes="32x32" href="/RANEPA_logo.png">
-<link rel="icon" type="RANEPA_logo.png" sizes="16x16" href="/RANEPA_logo.png">
+<!-- Favicon настройки -->
+    <!-- Основная иконка -->
+    <link rel="icon" type="RANEPA_logo.png" href="/RANEPA_logo.png">
+    <!-- Иконки для Apple-устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/RANEPA_logo.png">
+    <!-- Иконки разных размеров -->
+    <link rel="icon" type="RANEPA_logo.png" sizes="32x32" href="/RANEPA_logo.png">
+    <link rel="icon" type="RANEPA_logo.png" sizes="16x16" href="/RANEPA_logo.png">
+    <!-- стили CSS-->
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -30,7 +33,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
+        /* Основные стили таблицы */
         .table-container {
             overflow-x: auto;
             margin: 30px auto;
@@ -56,7 +59,7 @@
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        /* Цвета из таблицы Менделеева */
+        /* Цвета из таблицы Менделеева(Стили ячеек таблицы) */
         td.M { 
             background: #4ecdc4; /* Металлы */
             color: white;
@@ -346,7 +349,7 @@ nav a:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(78,205,196,0.3);
 }
-
+/* Адаптивный дизайн */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
@@ -514,6 +517,7 @@ tbody th {
     </style>
 </head>
 <body>
+    <!-- Навигационное меню -->
     <nav>
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -529,10 +533,10 @@ tbody th {
 
     
 
-    <!-- Основная таблица -->
+    <!-- Основная таблица растворимости -->
     <div class="table-container">
         <table>
-            <!-- Содержимое таблицы остаётся без изменений -->
+            <!-- Содержимое таблицы -->
             <div class="table-container">
                 <!-- Название таблицы -->
     <h1 class="table-title">Таблица растворимости веществ</h1>
@@ -589,7 +593,7 @@ tbody th {
             </div>
         </table>
     </div>
-
+    <!-- Легенда для обозначений -->
     <div class="legend">
         <ul>
             <li>
@@ -610,7 +614,7 @@ tbody th {
             </li>
         </ul>
     </div>
-
+    <!-- Дополнительные справочные данные -->
     <div class="table-container">
         <table class="additional-table">
             <h2 style="text-align:center; margin-top: 40px;">Дополнительные справочные данные</h2>
@@ -956,6 +960,7 @@ tbody th {
     }
 </script>
 
+<!-- Модальное окно с информацией -->
 <div id="ionModal" class="modal">
     <div class="modal-content">
         <span class="close">&times;</span>
