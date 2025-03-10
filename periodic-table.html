@@ -2,19 +2,20 @@
 <html lang="ru">
 
 <head>
+    <!-- Метаданные и стили -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Интерактивная таблица Менделеева</title>
-    <!-- Базовый favicon -->
-<link rel="icon" type="RANEPA_logo.png" href="/RANEPA_logo.png">
+<!-- Favicon настройки -->
+    <!-- Основная иконка -->
+    <link rel="icon" type="RANEPA_logo.png" href="/RANEPA_logo.png">
+    <!-- Иконки для Apple-устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/RANEPA_logo.png">
+    <!-- Иконки разных размеров -->
+    <link rel="icon" type="RANEPA_logo.png" sizes="32x32" href="/RANEPA_logo.png">
+    <link rel="icon" type="RANEPA_logo.png" sizes="16x16" href="/RANEPA_logo.png">
 
-<!-- Для разных устройств -->
-<link rel="apple-touch-icon" sizes="180x180" href="/RANEPA_logo.png">
-<link rel="icon" type="RANEPA_logo.png" sizes="32x32" href="/RANEPA_logo.png">
-<link rel="icon" type="RANEPA_logo.png" sizes="16x16" href="/RANEPA_logo.png">
     <style>
-        
-
     /* Адаптивные стили */
     @media (max-width: 768px) {
         .main-header {
@@ -682,15 +683,14 @@ nav a:hover {
 </head>
 
 <body>
-    
-    <!-- Канвас для анимированных частиц фона -->
+    <!-- Анимированный фон -->    
     <canvas class="particles" id="particles"></canvas>
     <!-- Лоадер с анимацией -->
     <div class="loader-container" id="loader">
         <div class="loader"></div>
     </div>
 
-    
+    <!-- Навигационное меню -->
  <nav>
         <ul>
             <li><a href="index.html">Главная</a></li>
